@@ -5,3 +5,7 @@ ID,Message,Intent,Sentiment,PII_Flag,Rationale
 4,"Hey, I'm still waiting on a reply about the charge from last Thursday. My card ending in 1412 was used twice, and I didn't authorise it.",Billing,Negative,Yes,Last four digits of card included
 5,"Thanks again for fixing the API key issue last week. You saved me a bunch of time!",Technical,Positive,No,Platform preferred Technical over Other because an API key issue was explicitly mentioned
 6,"I changed my password yesterday and now I can't access my workspace. I keep getting redirected to a blank screen",Technical,Negative,No,
+7,"Hi, just confirming that I updated my payment method yesterday. Let me know if you still see the old one on file.",Billing,Neutral,No,Payment method updates are explicitly classified under Billing per guidelines
+8,"Can you tell me why my profile shows someone else's name and photo when I log in?",Technical,Negative,No,Platform preferred Technical due to the system glitch root cause
+9,"My account was unexpectedly disabled right after I uploaded my verification documents. Is this normal?",Account,Negative,No,
+10,"Hey, I just wanted to say your support team has been super helpful. Everything is working perfectly now",Other,Positive,No,
