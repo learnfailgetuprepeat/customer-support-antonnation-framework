@@ -1,0 +1,7 @@
+ID,Message,Intent,Sentiment,PII_Flag,Rationale
+1,"Hi, I was charged twice for my subscription this month. Can someone help me fix this?",Billing,Neutral,No,
+2,"Hello, I can't log in to my dashboard. It keeps saying 'user not found'",Technical,Neutral,No,Error message text treated as Technical per platform answer key
+3,"Hi team, I recently changed my billing info and now my account is locked. I am not sure if the two are related",Account,Neutral,No,
+4,"Hey, I'm still waiting on a reply about the charge from last Thursday. My card ending in 1412 was used twice, and I didn't authorise it.",Billing,Negative,Yes,Last four digits of card included
+5,"Thanks again for fixing the API key issue last week. You saved me a bunch of time!",Technical,Positive,No,Platform preferred Technical over Other because an API key issue was explicitly mentioned
+6,"I changed my password yesterday and now I can't access my workspace. I keep getting redirected to a blank screen",Technical,Negative,No,
