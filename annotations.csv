@@ -9,3 +9,8 @@ ID,Message,Intent,Sentiment,PII_Flag,Rationale
 8,"Can you tell me why my profile shows someone else's name and photo when I log in?",Technical,Negative,No,Platform preferred Technical due to the system glitch root cause
 9,"My account was unexpectedly disabled right after I uploaded my verification documents. Is this normal?",Account,Negative,No,
 10,"Hey, I just wanted to say your support team has been super helpful. Everything is working perfectly now",Other,Positive,No,
+11,"Not sure if this went through already, but I'd like to change the email linked to my billing info. Right now, it still shows my old address from before I updated it.",Account,Neutral,No,User is requesting an update to email contact information.
+12,"Appreciate the help earlier. I'm still seeing weird charges though, and I don't think the refund posted yet. Should I open another ticket or just wait?",Billing,Negative,No,User is reporting unexpected charges and a missing refund.
+13,"Hey, the app keeps freezing whenever I try to update my account settings. It worked fine last week, so I'm not sure what changed. Any ideas?",Technical,Negative,No,Main issue is the interface performance failure (app freezing).
+14,"I keep getting verification codes I didn't request. Can you tell me if someone else is trying to log in to my account or if it's just a glitch?",Account,Negative,No,Primary concern is unauthorized account access and security.
+15,"It says my subscription was canceled, but I didn't cancel it. Can someone explain what's going on? Also, I haven't received any of the usual confirmation emails.",Account,Negative,No,Platform maps unexpected cancellation to loss of account access.
