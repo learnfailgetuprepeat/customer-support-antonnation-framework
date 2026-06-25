@@ -30,3 +30,11 @@ To ensure the integrity of the training dataset, a comprehensive Quality Assuran
 | **3.** *"I have emailed twice about this bug... My screen freezes every time I try to save..."* | Intent: Bug<br>Sentiment: Negative<br>PII Flag: No | **KEEP** | **Taxonomy Validation:** The platform expands the framework to accept `Bug` as a standalone intent for interface errors. Sentiment is accurately marked `Negative` due to explicit frustration. |
 | **4.** *"Can you cancel my subscription?... My account is under j.ramos@fastmail.com."* | Intent: Billing<br>Sentiment: Negative<br>PII Flag: No | **FIX** | **Data Security Enforcement:** The peer missed a direct piece of Personally Identifiable Information. The explicit inclusion of a specific email string (`j.ramos@fastmail.com`) requires an immediate fix to `Yes`. |
 | **5.** *"Why did you close my ticket?... Every time I log in, it says 'unauthorised'..."* | Intent: Bug<br>Sentiment: Negative<br>PII Flag: No | **KEEP** | **Error Persistence Mapping:** A recurring system authorization failure after a password reset is correctly labeled as a `Bug` intent with a `Negative` sentiment due to user irritation. |
+
+## Phase 5: Taxonomy & Guideline Optimization
+
+A key responsibility of a Data Quality Reviewer is identifying gaps in documentation to minimize future labeling variance. 
+
+### Proposed Guideline Revision
+* **Observation:** During the peer-review phase, the validation key accepted a fourth intent classification (`Bug`) which was missing from the initial core onboarding taxonomy (Billing, Account, Technical). This discrepancy caused initial alignment friction during technical error sorting.
+* **Recommendation:** Update the *One-Page Guidelines* to explicitly define the boundaries between a standard infrastructure failure (`Technical`) and a persistent application software anomaly (`Bug`). Providing explicit code-path examples for both will significantly increase inter-annotator agreement (IAA) scores in future data pipelines.
